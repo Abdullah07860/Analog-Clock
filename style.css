@@ -1,0 +1,230 @@
+
+
+h2{
+    margin: 40px 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+
+#container{
+    margin: auto;
+    position: relative;
+    /* border: 3px solid red; */
+    width: 60vw;
+    height: 120vh;
+    background: url('clock.png')no-repeat center center/cover;
+    background-size: 100%; /* Due to this if clock to chota bda kre to adjust kr lega */
+}
+#hour ,#minute ,#second{
+    position: absolute;
+    border-radius: 15px;
+    transform-origin: bottom;  /*IMPORTANT LINE...because issi ke wahaj se ho bottom se hi rotate kr rha*/
+}
+
+#hour{
+    width: 1.2%;
+    height: 19.3%;
+    top: 30.7%;
+    left: 49.6%;
+    background-color: rgb(255, 253, 253);
+}
+#minute{
+    width: .8%;
+    height: 23.5%;
+    top: 26.7%;
+    left: 49.4%;
+    background-color: rgb(255, 255, 255);
+}
+#second{
+    width: .65%;
+    height: 26.8%;
+    top: 23%;
+    left: 49.7%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* 1st mdia query for responsive page */
+/* @media only screen and (min-width:1000px){
+#hour{
+    width: 1.2%;
+    height: 21.3%;
+    top: 28.7%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 25.5%;
+    top: 24.7%;
+    left: 49.4%;
+}
+#second{
+    width: .65%;
+    height: 28.8%;
+    top: 21%;
+    left: 49.7%;
+}
+  } */
+
+
+/* 1st mdia query for responsive page */
+@media only screen and (max-width: 750px) and (min-width:660px) {
+#hour{
+    width: 1.3%;
+    height: 16%;
+    top: 33.7%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 18.5%;
+    top: 31.7%;
+    left: 49.4%;
+}
+#second{
+    width: .54%;
+    height: 19.8%;
+    top: 30%;
+    left: 49.7%;
+}
+  }
+
+/* 2nd mdia query for responsive page */
+@media only screen and (max-width: 660px) and (min-width:485px) {
+#hour{
+    width: 1.3%;
+    height: 12%;
+    top: 37.7%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 14.5%;
+    top: 35.7%;
+    left: 49.4%;
+}
+#second{
+    width: .54%;
+    height: 16.8%;
+    top: 33%;
+    left: 49.9%;
+}
+  }
+
+
+/* 3rd mdia query for responsive page */
+@media only screen and (max-width: 485px) and (min-width:350px) {
+#hour{
+    width: 1.3%;
+    height: 8%;
+    top: 42%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 10.5%;
+    top: 39.6%;
+    left: 49.4%;
+}
+#second{
+    width: .54%;
+    height: 11.8%;
+    top: 38.4%;
+    left: 49.7%;
+}
+  }
+
+
+/* 4th mdia query for responsive page */
+@media only screen and (max-width: 350px) and (min-width:290px){
+#hour{
+    width: 1.3%;
+    height: 7%;
+    top: 43%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 8.5%;
+    top: 41.62%;
+    left: 49.35%;
+}
+#second{
+    width: .54%;
+    height: 9.8%;
+    top: 40.33%;
+    left: 49.65%;
+}
+  }
+
+
+/* 5th mdia query for responsive page */
+@media only screen and (max-width: 290px) and (min-width:238px) {
+#hour{
+    width: 1.3%;
+    height: 6%;
+    top: 44%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 7%;
+    top: 43%;
+    left: 49.4%;
+}
+#second{
+    width: .54%;
+    height: 7.8%;
+    top: 42.25%;
+    left: 49.4%;
+}
+  }
+
+
+/* 6th mdia query for responsive page */
+@media only screen and  (max-width:238px) and (min-width:175px) {
+#hour{
+    width: 1.3%;
+    height: 3.5%;
+    top: 46.5%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 4.5%;
+    top: 45.5%;
+    left: 49.4%;
+}
+#second{
+    width: .54%;
+    height: 5%;
+    top: 45%;
+    left: 49.4%;
+}
+  }
+
+
+/* 7th mdia query for responsive page */
+@media only screen and  (max-width:175px) {
+#hour{
+    width: 1.3%;
+    height: 1%;
+    top: 49%;
+    left: 49.6%;
+}
+#minute{
+    width: .8%;
+    height: 2%;
+    top: 48%;
+    left: 49.4%;
+}
+#second{
+    width: .54%;
+    height: 2%;
+    top: 48%;
+    left: 49.4%;
+}
+  }
+
